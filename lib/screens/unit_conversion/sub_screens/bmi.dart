@@ -297,7 +297,6 @@ class BMIProcessor {
   static List<String> calculate(int age, double height, double weight) {
     double bmi = ((weight * 10000) / (height * height));
     String tag;
-    // if (age >= 2 && age < 18) {
     if (bmi < 18.5) {
       tag = "Underweight";
     } else if (bmi <= 24.9) {
@@ -309,7 +308,6 @@ class BMIProcessor {
     } else {
       tag = "Extreme Obese";
     }
-    // }
 
     return ["${bmi.toStringAsFixed(2)}", tag];
   }

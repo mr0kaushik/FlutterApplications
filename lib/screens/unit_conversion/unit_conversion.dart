@@ -1,17 +1,17 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mobile_computing/config/size_config.dart';
-import 'package:mobile_computing/screens/unit_conversion/sub_screens/age.dart';
-import 'package:mobile_computing/screens/unit_conversion/sub_screens/bmi.dart';
-import 'package:mobile_computing/screens/unit_conversion/sub_screens/length.dart';
-import 'package:mobile_computing/screens/unit_conversion/sub_screens/percentage.dart';
-import 'package:mobile_computing/screens/unit_conversion/sub_screens/temperature.dart';
 
 import 'components/unit_item_model.dart';
 import 'components/unit_item_widget.dart';
+import 'sub_screens/age.dart';
+import 'sub_screens/bmi.dart';
 import 'sub_screens/date.dart';
 import 'sub_screens/discount.dart';
+import 'sub_screens/length.dart';
+import 'sub_screens/percentage.dart';
 import 'sub_screens/speed.dart';
+import 'sub_screens/temperature.dart';
 import 'sub_screens/weight.dart';
 
 class UnitConversionScreen extends StatefulWidget {

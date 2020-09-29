@@ -6,6 +6,7 @@ import 'package:mobile_computing/config/simple_message_dialog.dart';
 import 'package:mobile_computing/config/size_config.dart';
 import 'package:mobile_computing/screens/calculator/calculator.dart';
 import 'package:mobile_computing/screens/digital_clock/clock.dart';
+import 'package:mobile_computing/screens/link_editor/link_editor.dart';
 import 'package:mobile_computing/screens/phone_book/phone_book.dart';
 import 'package:mobile_computing/screens/unit_conversion/unit_conversion.dart';
 import 'package:permission_handler/permission_handler.dart';
@@ -82,6 +83,15 @@ class _HomeScreenState extends State<HomeScreen> {
                   onTap: () {
                     _getNextScreen(context,
                         UnitConversionScreen(tag: "assets/svg/unit.svg"));
+                  },
+                ),
+                MenuItem(
+                  title: "Text Editor",
+                  desc: "A clickable text viewer for emails, web urls & contact numbers",
+                  asset: "assets/svg/link.svg",
+                  onTap: () {
+                    _getNextScreen(context,
+                        LinkEditorScreen(tag: "assets/svg/link.svg"));
                   },
                 ),
               ],
