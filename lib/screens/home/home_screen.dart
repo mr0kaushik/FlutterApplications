@@ -8,6 +8,7 @@ import 'package:mobile_computing/screens/calculator/calculator.dart';
 import 'package:mobile_computing/screens/digital_clock/clock.dart';
 import 'package:mobile_computing/screens/link_editor/link_editor.dart';
 import 'package:mobile_computing/screens/phone_book/phone_book.dart';
+import 'package:mobile_computing/screens/tic_tac_toe.dart';
 import 'package:mobile_computing/screens/unit_conversion/unit_conversion.dart';
 import 'package:permission_handler/permission_handler.dart';
 
@@ -87,11 +88,21 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 MenuItem(
                   title: "Text Editor",
-                  desc: "A clickable text viewer for emails, web urls & contact numbers",
+                  desc:
+                      "A clickable text viewer for emails, web urls & contact numbers",
                   asset: "assets/svg/link.svg",
                   onTap: () {
+                    _getNextScreen(
+                        context, LinkEditorScreen(tag: "assets/svg/link.svg"));
+                  },
+                ),
+                MenuItem(
+                  title: "Tic Tac Toe",
+                  desc: "A tic tac toe game with computer",
+                  asset: "assets/svg/tic_tac_toe.svg",
+                  onTap: () {
                     _getNextScreen(context,
-                        LinkEditorScreen(tag: "assets/svg/link.svg"));
+                        TickTacToeScreen(tag: "assets/svg/tic_tac_toe.svg"));
                   },
                 ),
               ],

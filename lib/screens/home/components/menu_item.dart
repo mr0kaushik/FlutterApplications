@@ -49,8 +49,7 @@ class MenuItem extends StatelessWidget {
               tag: asset,
               child: Text(
                 "$title",
-                style: Theme
-                    .of(context)
+                style: Theme.of(context)
                     .textTheme
                     .subtitle2
                     .copyWith(fontSize: SizeConfig.defaultSize * 2.0),
@@ -58,11 +57,7 @@ class MenuItem extends StatelessWidget {
             ),
             subtitle: Text(
               "$desc",
-              style: Theme
-                  .of(context)
-                  .textTheme
-                  .bodyText1
-                  .copyWith(
+              style: Theme.of(context).textTheme.bodyText1.copyWith(
                   color: Colors.grey, fontSize: SizeConfig.defaultSize * 1.5),
             ),
           ),

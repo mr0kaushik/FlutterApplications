@@ -49,7 +49,7 @@ class ClockPageState extends State<ClockPage> {
           tag: widget.tag,
           flightShuttleBuilder:
               (flightContext, animation, direction, fromContext, toContext) =>
-              SizedBox.shrink(),
+                  SizedBox.shrink(),
           child: Text(
             "Clock",
           ),
